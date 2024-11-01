@@ -20,7 +20,7 @@ const CatComponent: React.FC = () => {
       />
       <button className={styles.toggleFavorites} onClick={() => setShowFavorites(!showFavorites)}>{showFavorites ? "Hide Favorites" : "Show Favorites"}</button>
       {loadingStatus && <p className={styles.loading}>Загрузка...</p>}
-      {error && <p className={styles.error}>Ошибка: {error}</p>}
+      {error && <p className={styles.error}>Error: {error}</p>}
       {filteredCats && (
         <div className={styles.dataContainer}>
           {displayedCats.map((cat) => (
