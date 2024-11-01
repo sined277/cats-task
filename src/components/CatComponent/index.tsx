@@ -19,7 +19,7 @@ const CatComponent: React.FC = () => {
         onBreedChange={handleBreedChange} 
       />
       <button className={styles.toggleFavorites} onClick={() => setShowFavorites(!showFavorites)}>{showFavorites ? "Hide Favorites" : "Show Favorites"}</button>
-      {loadingStatus && <p className={styles.loading}>Загрузка...</p>}
+      {loadingStatus && <p className={styles.loading}>Loading...</p>}
       {error && <p className={styles.error}>Error: {error}</p>}
       {filteredCats && (
         <div className={styles.dataContainer}>
